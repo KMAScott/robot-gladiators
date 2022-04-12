@@ -38,6 +38,15 @@ if (promptFight === "skip" || promptFight === "SKIP") {
   }
 }
 
+if (playerHealth > 0) {
+  window.alert("Welcome to Robot Gladiators! Round " + ( i + 1 ) );
+}
+
+else {
+  window.alert("You have lost your robot in battle! Game Over!");
+  break;
+}
+
     // Subtract the value of 'playerAttack' from the value of 'enemyHealth' and use that result to update the value in the 'enemyHealth' variable
     enemyHealth = enemyHealth - playerAttack;
 
